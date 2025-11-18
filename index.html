@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Weekly Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes draw-check {
+        from {
+          stroke-dashoffset: 25;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      .animate-draw-check {
+        stroke-dasharray: 25;
+        animation: draw-check 0.4s ease-out forwards;
+      }
+
+      @keyframes scale-in {
+        from {
+            transform: scale(0.8);
+            opacity: 0.5;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+      }
+      .animate-scale-in {
+          animation: scale-in 0.3s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "@dnd-kit/core": "https://aistudiocdn.com/@dnd-kit/core@^6.1.0",
+    "@dnd-kit/sortable": "https://aistudiocdn.com/@dnd-kit/sortable@^8.0.0",
+    "@dnd-kit/utilities": "https://aistudiocdn.com/@dnd-kit/utilities@^3.2.2"
+  }
+}
+</script>
+</head>
+  <body class="dark">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "AI Weekly Planner",
+  "description": "An elegant weekly planner application that visualizes tasks for each day of the week in a clear, card-based interface. Built with React, TypeScript, and Tailwind CSS.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
